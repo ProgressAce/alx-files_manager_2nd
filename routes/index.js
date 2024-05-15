@@ -7,7 +7,6 @@ const AuthController = require('../controllers/AuthController');
 const FilesController = require('../controllers/FilesController');
 
 const router = express.Router();
-router.use(express.json());
 
 router.get('/status', AppController.getStatus);
 router.get('/stats', AppController.getStats);
