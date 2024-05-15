@@ -1,4 +1,5 @@
 // Defines the definition of app endpoints
+
 const redisClient = require('../utils/redis');
 const dbClient = require('../utils/db');
 
