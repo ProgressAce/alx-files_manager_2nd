@@ -1,9 +1,9 @@
 // API Main point
 const express = require('express');
-const indexRoutes = require('./routes/index');
+const routes = require('./routes/index');
 
-const PORT = process.env.PORT || '5000';
+const port = process.env.PORT || '5000';
 const app = express();
 
-app.use(indexRoutes);
-app.listen(PORT, () => console.log(`API running on port ${PORT}`));
+app.use('/', routes);
+app.listen(port, () => console.log(`API running on port ${port}`));
